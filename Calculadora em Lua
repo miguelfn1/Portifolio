@@ -1,0 +1,115 @@
+#Calculador em lua que realiza operações matematicas 
+
+function soma()
+    io.write("Primeiro número \n")
+    local user1 = io.read()
+    
+    io.write("Segundo número \n")
+    
+    local user2 = io.read()
+    return print('Soma =', user1 + user2)
+  end
+  
+
+function subtracao()
+    io.write("Primeiro número \n")
+    local user1 = io.read()
+
+    io.write("Segundo número \n")
+    local user2 = io.read()
+    return print('Subtracao =', user1 - user2)
+end
+
+function multiplicacao()
+  io.write("Primeiro número \n")
+  local user1 = io.read()
+  
+  io.write("Segundo número \n")  
+  local user2 = io.read()
+  return print('Multiplicacao =', user1 * user2)
+end
+
+function divisao()
+  io.write("Primeiro número \n")
+  local user1 = io.read()
+  io.write("Segundo número \n")
+  local user2 = io.read()
+
+  if user2 == '0' then print("Não pode dividir por 0")
+                else
+                    return print("Divisão =", user1 / user2)
+                end
+end
+
+
+function aoQuadrado()
+  io.write("Entre com o número desejado para calcular \n")
+  local user1 = io.read()
+  return print('Ao Quadrado =', user1 * user1)
+end
+
+function aoCubo()
+  io.write("Entre com o número desejado para calcular \n")
+  local user1 = io.read()
+  return print('Ao Cubo =', user1 * user1 * user1)
+end
+
+  
+function raizQuadrada()
+  io.write("Entre com o número desejado para calcular \n")
+  local user1 = io.read()
+  return print('Raiz Quadrada =', math.sqrt (user1))
+end
+
+
+function raizCubica()
+  io.write("Entre com o número desejado para calcular \n")
+  local user1 = io.read()
+  return print('Raiz Cubica =', math.pow (user1, 1.0 / 3.0))
+end
+
+  
+function logaritmo()
+  io.write("Entre com o número desejado para calcular \n")
+  local user1 = io.read()
+  return print('Logaritmo =', math.log10 (user1))
+end
+
+
+while(true)
+  do
+    io.write("Olá Bem vindo A Calculadora \n")
+    io.write("Aperte ( 1 ) para Soma\n")
+    io.write("Aperte ( 2 ) para Subtração\n")
+    io.write("Aperte ( 3 ) para Multiplicação\n")
+    io.write("Aperte ( 4 ) para Divisao\n")
+    io.write("Aperte ( 5 ) para Ao Quadrado\n")
+    io.write("Aperte ( 6 ) para Ao Cubo\n")
+    io.write("Aperte ( 7 ) para Raiz Quadrada\n")
+    io.write("Aperte ( 8 ) para Raiz Cubica\n")
+    io.write("Aperte ( 9 ) para Logaritmo\n")
+    io.write("Aperte ( 10 ) para Cancelar\n")
+    io.write("Digite a Opção Desejada \n")
+    local opcao = io.read()
+    
+      if opcao == '1'  then soma() 
+        else if opcao == '2'  then subtracao() 
+          else if opcao == '3'  then multiplicacao()
+            else if opcao == '4'  then divisao()
+              else if opcao == '5' then aoQuadrado()
+                else if opcao == '6' then aoCubo()
+                  else if opcao == '7' then raizQuadrada()
+                    else if opcao == '8' then raizCubica()
+                      else if opcao == '9' then logaritmo()
+                        else if opcao == '10' then print ("Volte Sempre :) !")break end 
+              
+                      end  
+                    end
+                  end
+                end
+              end
+            end
+          end
+        end
+    end
+  end
